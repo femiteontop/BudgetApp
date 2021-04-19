@@ -53,17 +53,3 @@ class Budget:
             return f"₦{amount} transferred successfully into {transfer_receiver.category} budget. \n{'###' * 20} \n" \
                    f"Your new balance for {self.category} budget is ₦{self.balance}. \n{'###' * 20} \n" \
                    f"Your new balance for {transfer_receiver.category} budget is ₦{transfer_receiver.balance}"
-
-
-food = Budget('food')
-clothing = Budget('clothing')
-entertainment = Budget('entertainment')
-miscellaneous = Budget('miscellaneous')
-
-food.deposit(5000)
-clothing.deposit(4000)
-entertainment.deposit(2000)
-miscellaneous.deposit(3000)
-
-print(food.transfer(2000, food))
-
